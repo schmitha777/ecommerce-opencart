@@ -44,13 +44,14 @@ public class TC_001_AccountRegistration extends BaseClass
 			
 			regpage.setFirstName("kween");
 	    	logger.info("Provided First Name ");
+	    	
 	    	 
 	    	regpage.setLastName("krakue");
 	    	logger.info("Provided Last Name ");
 	    	 
 	    	regpage.setEmail(randomestring()+"@gmail.com");//randomly generated the email
 	    	logger.info("Provided Email ");
-	    	 
+	    	
 	    	regpage.setTelephone("5105551212");
 	    	logger.info("Provided Telephone ");
 	    	 
@@ -69,8 +70,9 @@ public class TC_001_AccountRegistration extends BaseClass
     	     	 Thread.sleep(5000);
     	 
     	    String confmsg=regpage.getConfirmationMsg();
+    	    logger.info("Account Registration Response:" + confmsg);
     	    
-    	    if(confmsg.equals("Your Account Has Been Created!"))
+    	    if(confmsg.equals("Congratulations! Your new account has been successfully created!"))
         	// if(confmsg.equals("Your Account Has Been Created!"))//Intensely failing
     	    	
     	    {

@@ -12,7 +12,7 @@ public class TC_014_ChangePassword extends BaseClass
   @Test
   public void test_changepassword() throws InterruptedException
   {
-	  logger.info(" Starting TC_013_MyAccountInformation ");
+	  logger.info(" Starting TC_014_MyAccountInformation ");
 	   
 	   driver.get(rb.getString("appURL"));
 				

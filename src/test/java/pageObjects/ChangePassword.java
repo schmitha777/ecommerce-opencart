@@ -23,7 +23,7 @@ public class ChangePassword
 	@FindBy(xpath="//input[@value='Login']")
 	WebElement btnLogin;
 	
-	@FindBy(xpath="//a[text()='Change your password']")
+	@FindBy(xpath="//a[text()='Password']")
 	WebElement changepwd;
 	
 	@FindBy(xpath="//input[@name='password']")//before changing password

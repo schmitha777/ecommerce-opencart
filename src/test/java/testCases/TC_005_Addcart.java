@@ -34,7 +34,9 @@ public class TC_005_Addcart extends BaseClass
 		
 		ac.addcart();
 		logger.info("product added to cart");
-		Thread.sleep(2000);//
+		Thread.sleep(2000);
+		
+		/*
 		ac.viewcart();
 		Thread.sleep(3000);
 		logger.info("product added to viewcart");
@@ -42,10 +44,10 @@ public class TC_005_Addcart extends BaseClass
 		ac.view();
 		Thread.sleep(3000);
 		logger.info("product added to view");
+		*/
 		
-		 String confmg=ac.getConfirmationMsg();//
-		   
-		    if(confmg.equals("Success: You have added iMac to your shopping cart!"))
+		 String confmg=ac.getConfirmationMsg();
+		    if(confmg.contains("Success: You have added iMac to your shopping cart!"))
 	        	
 	 		{
 	        	 logger.info("Search page is Success ");

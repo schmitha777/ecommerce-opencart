@@ -23,7 +23,7 @@ public class MyAccountinformation
 		@FindBy(xpath="//input[@value='Login']")
 		WebElement btnLogin;
 		
-		@FindBy(xpath="//a[text()='Edit your account information']")
+		@FindBy(xpath="//a[text()='Edit Account']")
 		WebElement editacct;
 		
 		@FindBy(xpath="//input[@name='telephone']")

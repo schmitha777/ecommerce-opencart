@@ -32,7 +32,7 @@ import org.openqa.selenium.support.PageFactory;
   	  WebElement txtPassword;
   	
   	  @FindBy(name="confirm")
-    	WebElement txtConfirmPassword;
+  	  WebElement txtConfirmPassword;
   	
       @FindBy(name="agree")
       WebElement chkdPolicy;
@@ -40,7 +40,7 @@ import org.openqa.selenium.support.PageFactory;
       @FindBy(xpath="//input[@value='Continue']")
       WebElement btnContinue;
       
-      @FindBy(xpath="//h1[normalize-space()='Your Account Has Been Created!']")
+      @FindBy(xpath="//p[normalize-space()='Congratulations! Your new account has been successfully created!']")
       WebElement msgConfirmation;
       
       public void setFirstName(String fname)
